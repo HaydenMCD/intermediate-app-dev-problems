@@ -1,3 +1,7 @@
+# Hayden McDowall
+# Otago Polytechnic 2021
+
+
 import time
 
 
