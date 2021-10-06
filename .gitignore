@@ -130,3 +130,6 @@ dmypy.json
 
 # logs
 .logfile.txt
+
+# Saved Books
+Books.txt

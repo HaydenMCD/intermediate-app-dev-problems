@@ -1,6 +1,7 @@
-def decorator(fn):
-    from datetime import datetime
-    import functools  
+from datetime import datetime
+import functools
+
+def decorator(fn):  
     @functools.wraps(fn)
     def wrapper(*args,**kwargs):
         with open('.logfile.txt','a+') as f:
