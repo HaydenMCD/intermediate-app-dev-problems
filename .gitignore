@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# logs
+.logfile.txt
+
+# Saved Books
+Books.txt

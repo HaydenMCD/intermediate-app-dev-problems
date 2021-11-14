@@ -1,0 +1,18 @@
+84 marks overall
+
+
+problem 1: 5 marks.  You wrote a Stack class, but it does not use a linked list. Also, on  this problem and others you aren't including docstrings.
+
+problem 2: 12 marks. You did use the Stack correctly to implement your calculator. However, you have one class to provide a stack, do the calculation, and print the output. This violates the single responsibility principle.
+
+Also, you loop over the tokens list with a while loop. This is fine, but typically we'd use a for loop for that.
+
+problem 3: 18 marks. You have a bunch of top level functions that should be combined into a SupermarketSimulation class. It could hold a Supermarket class as a field. This class could also incorporate your IVersion ABC.
+
+problem 4: 13 marks. This decorator has one big problem. You call the decorated function twice, once on line 12 and again on line 19. This could be a real problem fo the decortated function does something that should only happen one time. 
+
+problem 5: 19 marks. You pretty much nailed the Iterator protocol. I will point out that there is a much more efficient way to implement your __next__() method using the linked list, but your way still works. Your LinkedList class really needs docstrings, however.
+
+problem 8: 17 marks. Two issues:
+1. Your Book class both represents a book and gets user input, violating Single Responsibility.
+2. Your FormatFactory class works, but is unecessary. You could have just implemented that functionality in your BookList class. Any time you write a class with one static method, that's a sign that you didn't need the class.
